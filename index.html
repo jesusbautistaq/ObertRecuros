@@ -1,40 +1,318 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Banc de Recursos Obert: Presentación</title>
 
-		<title>reveal.js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/simple.min.css" id="theme"> 
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <style>
+        /* ESTILOS GLOBALES */
+        body {
+            background-color: #FAFAFA;
+        }
+        .reveal {
+            font-family: 'Roboto', sans-serif;
+            color: #000000;
+        }
+        .reveal h1 {
+            font-family: 'Instrument Sans', sans-serif;
+            font-size: 2.2em; 
+            color: #025670; 
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        .reveal h2 {
+            font-family: 'Roboto', sans-serif;
+            color: #025670;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        .reveal h3 {
+            font-family: 'Roboto', sans-serif;
+            color: #025670; 
+            font-weight: 700;
+        }
+        .reveal .slides section p, .reveal .slides section li {
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.9em; 
+            text-align: left;
+            margin-left: 5%;
+            margin-right: 5%;
+            color: #000000;
+        }
+        .reveal .progress span {
+            background-color: #a9f1e9; 
+        }
+        .reveal section img {
+            border: none;
+            box-shadow: none;
+            background: none;
+        }
+        
+        /* LOGO OBERT EN ESQUINA SUPERIOR IZQUIERDA (350px de ancho) */
+        .slide-background {
+            background-image: none !important; 
+        }
+        .reveal .slide-background::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 350px; 
+            height: 140px; 
+            background-image: url('logoObertRecursos.png'); /* RUTA CONFIRMADA EN EL RAÍZ */
+            background-size: contain;
+            background-repeat: no-repeat;
+            z-index: 10; 
+        }
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+        /* ESTILOS ESPECÍFICOS DE PORTADA */
+        .reveal .slides > section:first-child .slide-background::before {
+            width: 400px; 
+            height: 160px; 
+            top: 30px;
+            left: 30px;
+        }
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+        /* PARA AÑADIR EL LOGO DE ELEARNING */
+        .exe-logo {
+            margin-top: 15px;
+            height: 100px; 
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-markdown>
+                <textarea data-template>
+                    # BANC DE RECURSOS "OBERT": 
+                    ## Diseño, Desarrollo y Estrategia de Despliegue
+                    ### Presenta: CEFIRE de Creación de Recursos y Competencias Profesionales Docentes
+                </textarea>
+            </section>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+            <section data-markdown>
+                <textarea data-template>
+                    ## Introducción
+
+                    ### El Contexto Digital de la Formación Docente
+
+                    * **La Necesidad:** Centralizar la producción de materiales de calidad generados por la red de centros y asesores.
+                    * **El Objetivo General:** Impulsar una cultura de conocimiento abierto y buenas prácticas, alineada con la digitalización educativa de la Comunitat Valenciana.
+                </textarea>
+            </section>
+
+            <section>
+                <section data-markdown>
+                    <textarea data-template>
+                        ## Fundamentos y Propósito
+
+                        ### ¿Qué es Obert? Un Espacio Digital Colaborativo
+
+                        * **Definición:** Plataforma digital al servicio del profesorado para facilitar el **acceso, la creación y el intercambio** de Recursos Educativos Abiertos (REA).
+                        * **Propósito:** Ofrecer situaciones de aprendizaje, materiales didácticos y recursos diseñados con criterios de **calidad, accesibilidad e inclusión**.
+                    </textarea>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        ### Principio 1: Apertura (Creative Commons)
+
+                        * Nace bajo los principios de la **Cultura Abierta** (acceso libre, colaboración e intercambio).
+                        * **Licenciamiento:** Todos los materiales se publican con licencias **Creative Commons BY-SA**, permitiendo su uso, adaptación y redistribución.
+                    </textarea>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        ### Principio 2: Calidad Garantizada
+
+                        * Cada recurso forma parte de un proceso de **revisión y acompañamiento** liderado por el CEFIRE CREA.
+                        * **Marco de Referencia:** Basado en la **Guía de Calidad de SdA-REA** del CEDEC (**INTEF**).
+                        * Asegura la coherencia pedagógica, la accesibilidad y la adecuación didáctica.
+                    </textarea>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        ### Estructura del Contenido: Los Dos Ejes
+
+                        1.  **Catálogo de Situaciones de Aprendizaje (SdA):**
+                            * Núcleo principal.
+                            * SdA completas elaboradas principalmente con **eXeLearning**.
+                        2.  **Mediateca:**
+                            * Espacio complementario para recursos modulares: vídeos, guías, infografías y materiales interactivos.
+                    </textarea>
+                </section>
+            </section>
+
+            <section>
+                <section data-markdown>
+                    <textarea data-template>
+                        ## Base Técnica y Diseño
+
+                        ### Soporte Técnico: La Plataforma Liferay
+                        **La Elección Tecnológica Estratégica**
+
+                        * **Tecnología Base:** El banco se sustenta en **Liferay**, plataforma robusta para la creación de portales web corporativos.
+                        * **Ventaja para la Conselleria:** Permite **gestionar contenidos, usuarios y servicios de manera centralizada**.
+                    </textarea>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        ### Valor de Liferay: Entornos Escalables
+
+                        * Facilita la construcción de entornos digitales **escalables y personalizados**.
+                        * **Gestión de Perfiles:** Permite alojar y catalogar REA, e integrar herramientas externas y gestionar distintos perfiles.
+                    </textarea>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        ### Propuesta de Diseño Web
+
+                        * **Foco en la Búsqueda:** La página principal destaca el **Buscador de recursos** sobre un fondo de color (`#a9f1e9`), simplificando la navegación.
+                        * **Usabilidad:** Interfaz limpia, accesible y fácil de usar, diseñada bajo los criterios de tipografía **Roboto**.
+                    </textarea>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        ### Metadatos: Estandarización para la Búsqueda
+
+                        * Cada recurso integra una ficha técnica estandarizada (metadatos).
+                        * **Campos Clave:** Área, Nivel, Idioma, Palabras Clave, **ODS** y Tipo de Recurso.
+                        * **Función Técnica:** Estandarización esencial para el correcto funcionamiento de los **filtros de búsqueda avanzada** en la plataforma Liferay.
+                    </textarea>
+                </section>
+            </section>
+            
+            <section>
+                <section data-markdown>
+                    <textarea data-template>
+                        ## Ecosistema y Colaboración
+
+                        ### Integración Clave: eXeLearning
+                        **La herramienta de creación de referencia**
+
+                        * **Filosofía Obert:** Fuerte apuesta por **eXeLearning** como herramienta principal para la creación de **Situaciones de Aprendizaje (SdA)**. 
+                        * **Ventajas:** Software de código abierto, intuitivo y utilizado por el profesorado.
+                        * **Formato de Exportación:** Las SdA se publican en formato web, optimizado para su visualización y descarga en Obert.
+                        <img src="Logoexe_completo_verde_negro-1024x926.png" alt="Logo eXeLearning" class="exe-logo"> </textarea>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        ### Coordinación con el INTEF
+                        **Alineación Estratégica Nacional**
+
+                        * **Referente Nacional:** El **INTEF** (Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado) es el referente en creación de REA.
+                        * **Estándares Comunes:** Mantenemos una **estrecha coordinación** para asegurar criterios de calidad y catalogación comunes.
+                        * **Beneficio:** Facilita la **interoperabilidad** y el posible intercambio de recursos a nivel nacional.
+                    </textarea>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        ### Criterios Comunes de Catalogación
+                        **Hacia una Red de Bancos de Recursos**
+
+                        * **Unificación:** Implementación de metadatos y criterios de calidad **homologados** con otros bancos de recursos educativos.
+                        * **Ventajas:**
+                            * Facilita la **búsqueda** y descubrimiento de recursos.
+                            * Prepara el banco para una futura **integración en redes** más amplias de REA.
+                            * Garantiza la **coherencia y fiabilidad** del contenido.
+                    </textarea>
+                </section>
+            </section>
+
+            <section>
+                <section data-markdown>
+                    <textarea data-template>
+                        ## Situación Actual y Tareas Críticas
+
+                        ### Avance del Proyecto
+                        **Informe de Situación: 06-10-2025**
+
+                        * **Fase Actual:** (Indicar la fase de desarrollo actual, p.ej., Entorno de desarrollo funcional, Pruebas piloto).
+                        * **Hitos Logrados:** (Listar los principales avances técnicos y funcionales ya cerrados, según el informe).
+                    </textarea>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        ### Tareas Pendientes: Ruta Crítica
+                        **Foco Operativo para el Lanzamiento**
+
+                        * **1. Sistema de Búsqueda:** Finalización y QA (Quality Assurance) de los filtros y búsqueda avanzada.
+                        * **2. Módulos de Soporte:** Implementación de FAQs y Guías de uso.
+                        * **3. Pruebas Finales:** Pruebas de usabilidad y rendimiento en pre-producción.
+                        * **4. Despliegue:** Definición y ejecución del procedimiento de **despliegue al entorno de producción**.
+                    </textarea>
+                </section>
+            </section>
+
+            <section>
+                <section data-markdown>
+                    <textarea data-template>
+                        ## Estrategia de Nutrición y Futuro
+
+                        ### Estrategia para "Llenar" el Banco
+                        **Mecanismos de Generación de Contenido**
+
+                        1.  **Itinerarios Formativos del CEFIRE CREA:** Los recursos nacen del profesorado que participa en la formación.
+                        2.  **Projecte Obert:** Iniciativa que impulsa la creación de REA de calidad dentro de una red colaborativa.
+                    </textarea>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        ### Sostenibilidad del Contenido
+                        **Un Ecosistema en Crecimiento**
+
+                        * El modelo garantiza un **flujo constante de recursos validados**, evitando la obsolescencia.
+                        * El banco se nutre del trabajo, la creatividad y el compromiso del profesorado.
+                    </textarea>
+                </section>
+                <section data-markdown>
+                    <textarea data-template>
+                        ### Vías de Expansión y Mejoras Futuras
+                        **Visión a Largo Plazo**
+
+                        * Implementación de un **módulo de valoración y comentarios** para fomentar la interacción comunitaria.
+                        * Desarrollo de una **API** para facilitar la integración de recursos con plataformas externas (e.g., Aules/Moodle).
+                    </textarea>
+                </section>
+            </section>
+
+            <section data-markdown>
+                <textarea data-template>
+                    ## Conclusión y Próximos Pasos
+
+                    * **El Banco Obert es:** Arquitectura Liferay robusta + Calidad pedagógica CEFIRE CREA + Coordinación INTEF + Comunidad docente activa.
+                    * **Llamada a la Acción:** Solicitamos la aprobación de la hoja de ruta final y el soporte de la S.G. de Infraestructuras para el despliegue a producción.
+
+                    ### MOLTES GRÀCIES / GRACIAS
+                </textarea>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/notes/notes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
+
+    <script>
+        // Inicialización de Reveal.js
+        Reveal.initialize({
+            hash: true,
+            markdown: {
+                smartypants: true
+            },
+            plugins: [ RevealMarkdown, RevealNotes, RevealHighlight ]
+        });
+    </script>
+</body>
 </html>
